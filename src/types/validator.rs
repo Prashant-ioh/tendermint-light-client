@@ -59,7 +59,7 @@ where
             V: Validator,
         {
             _phantom_data: PhantomData<V>,
-        };
+        }
         impl<'de, V> Visitor<'de> for SetVisitor<V>
         where
             V: Validator,
